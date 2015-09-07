@@ -1,0 +1,28 @@
+def = "https://www.google.com.au/#q=";
+
+document.getElementById('card').onclick = function() {
+
+ 
+};
+document.getElementById('mai').onclick = function() {
+  window.location.href = 'https://www.9gag.com';
+};
+
+document.getElementById('gos').onclick = function() {
+
+};
+
+function enterpressalert(e, textarea) {
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if (code == 13) { //Enter keycode
+    searchq = document.getElementById('search').value.replace(' ', '+');
+    window.open(def + searchq, 'name');
+  }
+}
+document.getElementById('bos').onclick = function() {
+  save = document.getElementById('search').value;
+  
+}
+document.getElementById('alertmoi').onclick = function() {
+  alert(save);
+}
